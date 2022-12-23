@@ -1,0 +1,217 @@
+if game.PlaceId == 5100950559 then
+	repeat task.wait() until game:IsLoaded()
+
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+    OrionLib:MakeNotification({
+        Name = "Updated! 23/12/22",
+        Content = "Added three new hubs! Syntax v1.3, v2, and v3 free. UI lib changed due to the previous UI not allowing me to expand as much as i want",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+
+wait(5)
+
+local Window = OrionLib:MakeWindow({Name = "Hat Giver", HidePremium = true, SaveConfig = false, ConfigFolder = "OrionTest"})
+
+local Common = Window:MakeTab({
+	Name = "Commonly used",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Fenix = Window:MakeTab({
+	Name = "FEnix",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Gel = Window:MakeTab({
+	Name = "Gelatek",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+ local HatHub = Window:MakeTab({
+	Name = "Hat Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local HB = Window:MakeTab({
+	Name = "HomeBrew",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Localp = Window:MakeTab({
+	Name = "Local Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Null = Window:MakeTab({
+	Name = "Nullware",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Sukma = Window:MakeTab({
+	Name = "Sukma",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local SYP = Window:MakeTab({
+	Name = "Syntax Paid",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local SYP2 = Window:MakeTab({
+	Name = "Syntax V1.3",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local SYP3 = Window:MakeTab({
+	Name = "Syntax V2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local SYP4 = Window:MakeTab({
+	Name = "Syntax V3 Free",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local syn = Window:MakeTab({
+	Name = "Synth",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--// Commonly Used Hats \\--
+
+local Common = Common:AddSection({
+	Name = "International Fedoras"
+})
+
+Common:AddDropdown({
+	Name = "Dropdown of Fedoras",
+	Default = "",
+	Options = {"Argentina", "Brazil", "Russia", "Ukraine", "Mexico", "France", "USA", "Vietnam", "South Korea", "Philippines", "Turkey", "UK", "Japan", "Indonesia", "Germany", "Canada", "Peru", "Chile", "Thailand", "Spain", "Poland", "China", "Colombia", "Australia", "Netherlands"},
+	Callback = function(Value)
+		if Value == "Argentina" then
+            game.Players:Chat("-gh 3438342658")
+        elseif Value == "Brazil" then
+            game.Players:Chat("-gh 4047554959")
+        elseif Value == "Russia" then
+            game.Players:Chat("-gh 4391384843")
+        elseif Value == "Ukraine" then
+            game.Players:Chat("-gh 3822880197")
+        elseif Value == "Mexico" then
+            game.Players:Chat("-gh 4094878701")
+        elseif Value == "France" then
+            game.Players:Chat("-gh 3033908130")
+        elseif Value == "USA" then
+            game.Players:Chat("-gh 3409612660")
+        elseif Value == "Vietnam" then
+            game.Players:Chat("-gh 3992084515")
+        elseif Value == "South Korea" then
+            game.Players:Chat("-gh 3656493304")
+        elseif Value == "Philippines" then
+            game.Players:Chat("-gh 3940375351")
+        elseif Value == "Turkey" then
+            game.Players:Chat("-gh 4381707497")
+        elseif Value == "UK" then
+            game.Players:Chat("-gh 4489239608")
+        elseif Value == "Japan" then
+            game.Players:Chat("-gh 4324158403")
+        elseif Value == "Indonesia" then
+            game.Players:Chat("-gh 3662265036")
+        elseif Value == "Germany" then
+            game.Players:Chat("-gh 3033910400")
+        elseif Value == "Canada" then
+            game.Players:Chat("-gh 3398308134")
+        elseif Value == "Peru" then
+            game.Players:Chat("-gh 3443038622")
+        elseif Value == "Chile" then
+            game.Players:Chat("-gh 4154538250")
+        elseif Value == "Thailand" then
+            game.Players:Chat("-gh 4645404679")
+        elseif Value == "Spain" then
+            game.Players:Chat("-gh 4246228452")
+        elseif Value == "Poland" then
+            game.Players:Chat("-gh 4584029953")
+        elseif Value == "China" then
+            game.Players:Chat("-gh 4622081834")
+        elseif Value == "Colombia" then
+            game.Players:Chat("-gh 3499972183")
+        elseif Value == "Australia" then
+            game.Players:Chat("-gh 4645400486")
+        elseif Value == "Netherlands" then
+            game.Players:Chat("-gh 4584042059")
+	end    
+})
+
+
+
+Common:AddButton({
+	Name = "Give 10 Fedoras",
+	Callback = function()
+        game.Players:Chat("-gh 3438342658, 4047554959, 4391384843, 3822880197, 4094878701, 3033908130, 3409612660, 3992084515, 3656493304, 3940375351")
+  	end    
+})
+
+local Common = Common:AddSection({
+	Name = "Hairs"
+})
+
+Common:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local Common = Common:AddSection({
+	Name = "Back Accessories"
+})
+
+Common:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local Common = Common:AddSection({
+	Name = "Shoulder Accessories"
+})
+
+Common:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local Common = Common:AddSection({
+	Name = "Waist Accessories"
+})
+
+Common:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
