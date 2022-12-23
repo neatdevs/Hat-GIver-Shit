@@ -1,5 +1,13 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
+local Window = OrionLib:MakeWindow({Name = "Hat Giver", HidePremium = true, SaveConfig = false, ConfigFolder = "OrionTest"})
+
+local Common = Window:MakeTab({
+	Name = "Commonly used",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 Common:AddDropdown({
 	Name = "Dropdown of Fedoras",
 	Default = "",
